@@ -1,0 +1,31 @@
+meal,protein,carbs,fat,calories,cost,region,type,category
+Oatmeal with Milk & Banana,12,54,8,350,40,Western,Veg,Breakfast
+Egg Bhurji (3 eggs) with 2 Roti,22,32,18,420,50,Indian,Non-Veg,Breakfast
+Paneer Bhurji (100g) with 2 Roti,20,34,22,460,75,Indian,Veg,Breakfast
+Moong Dal Chilla (2 nos),11,38,4,240,30,Indian,Vegan,Breakfast
+Poha with Sprouts & Peanuts,9,42,8,280,25,Indian,Vegan,Breakfast
+Peanut Butter Toast (2 slices),10,32,14,300,35,Western,Vegan,Breakfast
+Egg White Omelette (4 whites) & Toast,18,24,3,200,35,Western,Non-Veg,Breakfast
+Upma with Veggies,6,38,6,230,20,Indian,Veg,Breakfast
+Chicken Breast (150g) with Brown Rice,38,45,6,440,120,Western,Non-Veg,Lunch
+Dal Tadka with White Rice & Salad,12,65,7,390,40,Indian,Vegan,Lunch
+Chickpea Curry (Chole) with Roti (3 nos),18,72,9,460,45,Indian,Vegan,Lunch
+Soya Chunk Curry with Brown Rice,28,52,5,380,40,Indian,Vegan,Lunch
+Fish Curry (100g fish) with Rice,24,58,10,430,130,Indian,Non-Veg,Lunch
+Tofu Stir Fry with Quinoa,20,44,12,380,110,Western,Vegan,Lunch
+Paneer Tikka (120g paneer) with Salad,22,8,20,320,95,Indian,Veg,Lunch
+Egg Curry (2 eggs) with Roti (3 nos),18,52,14,420,55,Indian,Non-Veg,Lunch
+Boiled Soybeans (100g) & Salad,16,14,8,185,25,Indian,Vegan,Snack
+Whey Protein Shake (1 scoop),25,2,1.5,120,80,Western,Veg,Snack
+Roasted Chana (50g),10,28,3,180,15,Indian,Vegan,Snack
+Greek Yogurt (150g) with Almonds,14,12,8,180,70,Western,Veg,Snack
+Mixed Seeds and Walnuts (30g),6,8,16,200,50,Western,Vegan,Snack
+Sprouted Moong Salad,8,18,1,110,15,Indian,Vegan,Snack
+Grilled Chicken Breast (150g) with Veggies,35,12,5,250,110,Western,Non-Veg,Dinner
+Paneer Tikka Masala with 3 Roti,24,52,24,530,100,Indian,Veg,Dinner
+Dal Khichdi with Ghee & Curd,14,58,10,380,45,Indian,Veg,Dinner
+Tofu Curry with 3 Roti,20,52,12,410,75,Indian,Vegan,Dinner
+Baked Fish with Sweet Potato,26,38,8,340,140,Western,Non-Veg,Dinner
+Lentil Soup with Garlic Bread,12,42,6,280,60,Western,Veg,Dinner
+Soya Chunk Pulao with Raita,25,62,8,430,45,Indian,Veg,Dinner
+Mushroom Masala with 3 Roti,10,54,12,370,60,Indian,Veg,Dinner
