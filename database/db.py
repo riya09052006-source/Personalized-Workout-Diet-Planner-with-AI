@@ -6,8 +6,18 @@ from sqlalchemy import create_engine, Column, Integer, Float, String, Boolean, D
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 
 # Database setup
-DATABASE_URL = "sqlite:///fitness.db"
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///fitness.db")
+
+# Convert postgres:// to postgresql:// as required by SQLAlchemy
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+
+# Only use check_same_thread connection arguments for SQLite databases
+if "sqlite" in DATABASE_URL:
+    engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+else:
+    engine = create_engine(DATABASE_URL)
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
