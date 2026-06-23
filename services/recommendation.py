@@ -5,8 +5,8 @@ import random
 import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MEALS_CSV = os.path.join(BASE_DIR, "data", "meals.csv")
-WORKOUTS_CSV = os.path.join(BASE_DIR, "data", "workouts.csv")
+MEALS_CSV = os.path.join(BASE_DIR, "database", "data", "meals.csv")
+WORKOUTS_CSV = os.path.join(BASE_DIR, "database", "data", "workouts.csv")
 
 def calculate_daily_targets(profile: dict) -> dict:
     age = profile.get("age", 25)

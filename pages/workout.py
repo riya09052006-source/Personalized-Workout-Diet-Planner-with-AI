@@ -81,5 +81,4 @@ def show_workout_page():
                     )
                     st.success("Workout completion logged in your dashboard!")
 
-if __name__ == "__main__":
-    show_workout_page()
+show_workout_page()

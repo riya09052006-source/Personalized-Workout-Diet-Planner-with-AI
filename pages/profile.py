@@ -81,5 +81,4 @@ def show_profile_page():
                 st.success("Profile saved and weekly plans successfully generated!")
                 st.rerun()
 
-if __name__ == "__main__":
-    show_profile_page()
+show_profile_page()

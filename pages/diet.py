@@ -96,5 +96,4 @@ def show_diet_page():
                     )
                     st.success("Today's food intake logged successfully in your dashboard!")
 
-if __name__ == "__main__":
-    show_diet_page()
+show_diet_page()

@@ -149,5 +149,4 @@ def show_dashboard_page():
                 )
                 st.plotly_chart(fig_calories, use_container_width=True)
 
-if __name__ == "__main__":
-    show_dashboard_page()
+show_dashboard_page()

@@ -1,3 +1,7 @@
+def clean_html(html: str) -> str:
+    """Helper to clean leading whitespace and newlines from HTML strings to prevent Streamlit's markdown parser from rendering them as code blocks."""
+    return "".join(line.strip() for line in html.splitlines())
+
 def glass_card(title: str, content: str, subtitle: str = "", gradient_border: bool = False) -> str:
     border_style = "border: 1px solid rgba(255, 255, 255, 0.15);"
     if gradient_border:
@@ -18,7 +22,7 @@ def glass_card(title: str, content: str, subtitle: str = "", gradient_border: bo
         {f'<div style="color: #94A3B8; font-size: 0.85rem;">{subtitle}</div>' if subtitle else ''}
     </div>
     """
-    return html
+    return clean_html(html)
 
 def stat_metric_grid(metrics: list) -> str:
     cols_html = ""
@@ -40,10 +44,10 @@ def stat_metric_grid(metrics: list) -> str:
             <div style="color: #00F2FE; font-size: 0.75rem; font-weight: 500;">{m.get('sub', '')}</div>
         </div>
         """
-    return f'<div style="display: flex; flex-wrap: wrap; margin: -8px; justify-content: space-between; width: 100%;">{cols_html}</div>'
+    return clean_html(f'<div style="display: flex; flex-wrap: wrap; margin: -8px; justify-content: space-between; width: 100%;">{cols_html}</div>')
 
 def meal_card(meal_type: str, meal_name: str, calories: int, protein: int, carbs: int, fat: int, cost: float) -> str:
-    return f"""
+    html = f"""
     <div style="
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(10px);
@@ -81,9 +85,10 @@ def meal_card(meal_type: str, meal_name: str, calories: int, protein: int, carbs
         </div>
     </div>
     """
+    return clean_html(html)
 
 def workout_card(exercise_name: str, target: str, equipment: str, duration: int) -> str:
-    return f"""
+    html = f"""
     <div style="
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(10px);
@@ -108,10 +113,11 @@ def workout_card(exercise_name: str, target: str, equipment: str, duration: int)
         </div>
     </div>
     """
+    return clean_html(html)
 
 def custom_progress_bar(label: str, val: float, max_val: float, color: str = "#00F2FE") -> str:
     pct = min((val / max_val) * 100 if max_val > 0 else 0, 100)
-    return f"""
+    html = f"""
     <div style="margin-bottom: 15px;">
         <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
             <span style="color: #94A3B8; font-size: 0.85rem;">{label}</span>
@@ -122,3 +128,4 @@ def custom_progress_bar(label: str, val: float, max_val: float, color: str = "#0
         </div>
     </div>
     """
+    return clean_html(html)

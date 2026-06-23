@@ -76,5 +76,4 @@ def show_login_page():
                         else:
                             st.error("An account with this email already exists.")
 
-if __name__ == "__main__":
-    show_login_page()
+show_login_page()
