@@ -4,7 +4,7 @@ import hashlib
 from datetime import date, datetime
 from sqlalchemy import create_engine, Column, Integer, Float, String, Boolean, Date, DateTime, ForeignKey, Text
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
-
+DATABASE_URL="postgresql://user:password@host:port/dbname"
 # Database setup
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///fitness.db")
 
